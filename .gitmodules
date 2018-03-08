@@ -1,3 +1,0 @@
-[submodule "s3blocks"]
-    path = s3blocks
-    url = https://github.com/s3blocks/s3blocks.git
