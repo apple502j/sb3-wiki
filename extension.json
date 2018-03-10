@@ -1,0 +1,42 @@
+{
+	"name": "Scratch3blocks",
+	"version": 1.0,
+	"author": [
+		"ErnieParke",
+		"blob8108",
+    "jvvg",
+    "NitroCipher",
+    "apple502j"
+	],
+	"url": "https://github.com/apple502j/sb3-wiki",
+	"description": "This plugin takes text-based Scratch 3.0 code and renders it in a graphical format.",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"Scratch3BlocksHooks.php": "Scratch3BlocksHooks.php"
+	},
+	"ExtensionFunctions": [
+		"Scratch3BlocksHooks::sb3Setup"
+	],
+	"ResourceModules": {
+		"ext.scratch3Blocks": {
+			"scripts": [
+				"s3blocks/src/scratchblocks.js",
+				"s3blocks/src/translations.js",
+				"run_s3blocks.js"
+			],
+			"styles": "/inline.css",
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Scratch3Blocks"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"Scratch3BlocksHooks::sb3ParserInit"
+		]
+	},
+	"manifest_version": 1
+}
