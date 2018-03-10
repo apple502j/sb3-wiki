@@ -17,12 +17,12 @@ class Scratch3BlocksHooks {
 
 	// Output HTML for <scratch3blocks> tag
 	public static function sbRenderTag ($input, array $args, Parser $parser, PPFrame $frame) {
-		return '<pre class="blocks">' . htmlspecialchars($input) . '</pre>';
+		return '<pre class="blocks3">' . htmlspecialchars($input) . '</pre>';
 	}
 
 	// Output HTML for inline <sb3> tag
 	public static function sbRenderInlineTag ($input, array $args, Parser $parser, PPFrame $frame) {
-		return '<code class="blocks">' . htmlspecialchars($input) . '</code>';
+		return '<code class="blocks3">' . htmlspecialchars($input) . '</code>';
 	}
 }
 ?>
