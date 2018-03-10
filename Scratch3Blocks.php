@@ -22,8 +22,8 @@ require_once __DIR__ . "/Scratch3BlocksHooks.php";
 
 // Hooks
 
-$wgExtensionFunctions[] = 'Scratch3BlocksHooks::sbSetup';
-$wgHooks['ParserFirstCallInit'][] = 'Scratch3BlocksHooks::sbParserInit';
+$wgExtensionFunctions[] = 'Scratch3BlocksHooks::sb3Setup';
+$wgHooks['ParserFirstCallInit'][] = 'Scratch3BlocksHooks::sb3ParserInit';
 
 
 // Define resources
