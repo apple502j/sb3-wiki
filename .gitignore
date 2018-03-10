@@ -1,0 +1,6 @@
+# Error File
+*.stackdump
+
+# Temporary Files
+*.log
+*.tmp
